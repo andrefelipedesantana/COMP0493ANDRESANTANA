@@ -5,7 +5,7 @@ import java.io.IOException;
 public class Q1{
     public static void main(String[] args) throws IOException {
 
-        int contador;
+
         StringBuilder string = new StringBuilder();
 
         FileReader arquivo = new FileReader("C:\\Users\\Usuario\\IdeaProjects\\exercicios\\src\\entrada.txt");
