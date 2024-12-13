@@ -1,0 +1,68 @@
+SUBTAREFAS 
+
+Questão 1
+
+(a) Você sabe como armazenar uma string na sua linguagem de programação favorita?
+Sim, no Java, uma string pode ser armazenada usando a classe String ou StringBuilder. 
+No código, foi utilizado um objeto StringBuilder chamado string para armazenar e manipular as strings concatenadas.
+
+(c) Como concatenar (combinar) duas strings em uma maior?
+No Java, strings podem ser concatenadas utilizando o operador + ou a classe StringBuilder. 
+No código fornecido, a concatenação foi feita com o método append() da classe StringBuilder.
+
+(d) Como verificar se uma linha começa com a string “.......” para parar a leitura?
+Em java há uma função chamada " ". startsWith("") que verifica se uma string começa com uma determinada substring, no entanto,
+para garantir que uma string começa com 7 pontos e nada mais que essa quantidade, é necessário fazer uma varredura ou um loop
+que verifique se a string começa com uma sequencia de 7 caracteres e se o último caractere (o sétimo) não possui um caractere posterior igual
+a um ponto.
+
+Questão 2
+
+(a) Como encontrar a primeira ocorrência de uma substring em uma string?
+No código feito, a primeira ocorrência de uma substring é encontrada por meio de um loop for que itera sobre todas as posições
+possíveis da string TTT para buscar uma correspondência exata com a substring PPP. 
+A comparação é feita usando o método substring para extrair partes de TTT e compará-las com PPP usando equals. 
+O índice da primeira ocorrência é armazenado na lista indices.
+O índice da primeira ocorrência pode ser acessado diretamente pelo primeiro elemento da lista indices, que é preenchida quando 
+uma correspondência é encontrada.
+
+(b) Como encontrar as próximas ocorrências de uma substring em uma string?
+As próximas ocorrências são encontradas no mesmo loop. Sempre que uma correspondência é identificada (condição substring.equals(PPP)), 
+o índice da ocorrência atual é adicionado à lista indices. 
+Assim, a lista indices conterá todos os índices de ocorrência da substring em TTT.
+
+Questão 3
+
+Quantos dígitos, vogais ([aeiouAEIOU]) e consoantes (outros caracteres alfabéticos) existem em TTT?
+Dígitos: 4
+Vogais: 19
+Consoantes: 29
+
+Questão 4
+
+(a) Como tokenizar uma string?
+No código feito, a tokenização é realizada usando o método split da classe String com o regex "[ .]+" como delimitador.
+Esse padrão divide a string em tokens sempre que encontra espaços ou pontos consecutivos.
+
+String[] tokens = TTT.split("[ .]+");
+split("[ .]+"): Divide a string em tokens usando espaço (' ') ou ponto ('.') como delimitadores.
+
+(b) Como armazenar tokens em um array de strings?
+Os tokens obtidos pela tokenização são armazenados diretamente em um array de strings.
+O método split retorna um array de strings, que é armazenado na variável tokens.
+
+(c) Como ordenar lexicograficamente um array de strings?
+Através de funções de ordenação, como por exemplo a função Arrays.sort, que foi a utilizada.
+
+Arrays.sort(tokens);
+
+Questão 5
+
+Qual estrutura de dados foi usada para esta tarefa?
+Foi usada uma estrutura de dados LinkedHashMap, que mapeia palavras para sua contagem de ocorrências.
+
+Questão 6
+
+Como ler uma string com comprimento desconhecido?
+Através da classe Scanner utilizada para leitura de diversos tipos de dados.
+
